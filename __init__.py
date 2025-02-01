@@ -1,12 +1,14 @@
 
-from .hunyuan_3d_node import Hunyuan3DImageTo3D
+from .hunyuan_3d_node import install_check, Hunyuan3DImageTo3DMesh, Hunyuan3DTexture3DMesh
 
-Hunyuan3DImageTo3D.install_check()
+install_check()
 
 NODE_CLASS_MAPPINGS = {
-    "Hunyuan3D2ImageTo3D": Hunyuan3DImageTo3D
+    "Hunyuan3DImageTo3DMesh": Hunyuan3DImageTo3DMesh,
+    "Hunyuan3DTexture3DMesh": Hunyuan3DTexture3DMesh
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "Hunyuan3D2ImageTo3D": "Hunyuan3D-2 Image to 3D"
+    "Hunyuan3DImageTo3DMesh": "Hunyuan3D-2 Image to 3D Mesh",
+    "Hunyuan3DTexture3DMesh": "Hunyuan3D-2 Texture 3D Mesh"
 }
